@@ -4,9 +4,9 @@ import base64
 import hmac
 import hashlib
 import json
-import myapiaccess
+import accesscoinsbit
 
-#api_path = "/api/v1/account/balance"
+# api_path = "/api/v1/account/balance"
 
 api_path = "/api/v1/account/balances"
 request = {
@@ -16,7 +16,7 @@ request = {
 }
 
 
-response = myapiaccess.api(api_path, request)
+response = accesscoinsbit.api(api_path, request)
 
 
 print(response.text)
